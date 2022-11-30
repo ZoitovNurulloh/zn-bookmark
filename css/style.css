@@ -1,6 +1,35 @@
 /* CUSTOM PROPS */
 
+:root {
+  --color-blue:#5267DF;
+  --color-red:#FA5959;
+  --color-text:#242A45;
+  --color-text-75:rgba(36, 42, 69, 0.75);
+  --color-text-50:rgba(36, 42, 69, 0.5);
+  --color-gray:#9194A2;
+}
+
 /* FONTS */
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Medium.woff2') format('woff2'),
+      url('../fonts/Rubik-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('../fonts/Rubik-Regular.woff2') format('woff2'),
+      url('../fonts/Rubik-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 /* GLOBAL */
 
@@ -21,10 +50,11 @@ body {
   flex-direction: column;
   height: 100%;
   background-color: #fff;
-  color: #222;
-  font-family: "Arial", sans-serif;
+  color: var(--color-text-50);
+  font-family: "Rubik", "Arial", sans-serif;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: 36px;
+  letter-spacing: 0.15px;
   padding: 0;
   margin: 0;
 }
@@ -38,9 +68,9 @@ img {
 
 .container {
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
