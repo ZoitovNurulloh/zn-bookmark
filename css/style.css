@@ -259,6 +259,101 @@ input:-webkit-autofill:focus {
   margin: 0;
 }
 
+
+/* FEATURE-TAB-PANEL */
+.feature-tab-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature-tab-panel__img {
+  margin-right: 15px;
+  object-fit: contain;
+}
+
+.feature-tab-panel__info {
+  width: 445px;
+}
+
+.feature-tab-panel__title {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-size: 32px;
+  line-height: 52px;
+  font-weight: 500;
+  color: var(--color-text);
+}
+
+.feature-tab-panel__text {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 32px;
+}
+
+
+/* TABS */
+
+.tabs__list {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tabs__item {
+  width: 243px;
+  border-bottom: 1px solid rgba(73, 93, 207, 0.2);
+}
+
+.tabs__link {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  border-bottom: 4px solid transparent;
+  color: var(--color-text-75);
+  font-size: 16px;
+  line-height: 17px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.tabs__item-active .tabs__link {
+  border-bottom: 4px solid #FA5959;
+  color: var(--color-text);
+}
+
+.tabs__link:hover {
+  color: var(--color-red);
+}
+
+.tabs__link:active {
+  opacity: 0.6;
+}
+
+
+/* TABS-PANELS */
+
+.tabs__panels {
+  padding-top: 75px;
+  padding-bottom: 165px;
+  background-image: url(../img/blue-pill-bg.svg);
+  background-repeat: no-repeat;
+  background-position: calc(50% - 580px) 156px;
+}
+
+.tabs-panel {
+  display: none;
+}
+
+.tabs-panel--active {
+  display: block;
+}
+
+
 /* SITE-HEADER */
 
 .site-header {
@@ -341,6 +436,16 @@ input:-webkit-autofill:focus {
   object-fit: contain;
   filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.5));
 }
+
+
+/* FEATURES */
+.features__section-info {
+  margin-bottom: 44px;
+}
+
+
+
+
 
 /* RETINA BACKGROUND IMAGES */
 @media
