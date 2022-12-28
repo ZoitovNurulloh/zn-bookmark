@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,24 +11,25 @@
   <link rel="stylesheet" href="/css/style.css">
   <link rel="stylesheet" href="/css/normalize.css">
 </head>
+
 <body>
 
   <!-- SITE-HEADER -->
   <header class="site-header">
     <div class="site-header__container container">
-      <a class="site-header__logo logo" href="#" >
-              <img class="logo__img"  src="img/logo.svg" alt="logo" width="149" height="25"   >
-            </a>
+      <a class="site-header__logo logo" href="#">
+        <img class="logo__img" src="img/logo.svg" alt="logo" width="149" height="25">
+      </a>
 
-            <nav class="site-header__sitenav sitenav">
-              <ul class="sitenav__list">
-                <li class="sitenav__item"><a href="#" class="sitenav__link">Features</a></li>
-                <li class="sitenav__item"><a href="#" class="sitenav__link">Princing</a></li>
-                <li class="sitenav__item"><a href="#" class="sitenav__link">Contact</a></li>
-              </ul>
-            </nav>
+      <nav class="site-header__sitenav sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item"><a href="#" class="sitenav__link">Features</a></li>
+          <li class="sitenav__item"><a href="#" class="sitenav__link">Princing</a></li>
+          <li class="sitenav__item"><a href="#" class="sitenav__link">Contact</a></li>
+        </ul>
+      </nav>
 
-            <a class="button button--site-header button--red" href="#">Login</a>
+      <a class="button button--site-header button--red" href="#">Login</a>
     </div>
   </header>
 
@@ -40,7 +42,8 @@
           <h1 class="hero__title">
             A Simple Bookmark Manager
           </h1>
-          <p class="hero__description">A clean and simple interface to organize your favourite websites. Open a new browser tab and see your sites load instantly. Try it for free.</p>
+          <p class="hero__description">A clean and simple interface to organize your favourite websites. Open a new
+            browser tab and see your sites load instantly. Try it for free.</p>
           <div class="hero__actions">
             <a class="hero__actions-item button button--blue" href="#">Get it on Chrome</a>
             <a class="hero__actions-item button button--grey" href="#">Get it on Firefox</a>
@@ -57,68 +60,78 @@
       <div class="container">
         <div class="features__section-info section__info">
           <h2 class="section__title">Features</h2>
-          <p class="section__description">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+          <p class="section__description">Our aim is to make it quick and easy for you to access your favourite
+            websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
 
         <!-- TABS -->
         <div class="tabs">
           <ul class="tabs__list">
             <li class="tabs__item tabs__item--active">
-              <a href="#feature-simple-bookmarking" class="tabs__link js-tab-link" data-tab-target="#feature-simple-bookmarking">Simple Bookmarking</a>
+              <a href="#feature-simple-bookmarking" class="tabs__link js-tab-link"
+                data-tab-target="#feature-simple-bookmarking">Simple Bookmarking</a>
             </li>
             <li class="tabs__item">
-              <a href="#feature-speedy-searching" class="tabs__link js-tab-link" data-tab-target="#feature-speedy-searching">Speedy Searching</a>
+              <a href="#feature-speedy-searching" class="tabs__link js-tab-link"
+                data-tab-target="#feature-speedy-searching">Speedy Searching</a>
             </li>
             <li class="tabs__item">
-              <a href="#feature-easy-sharing" class="tabs__link js-tab-link" data-tab-target="#feature-easy-sharing">Easy Sharing</a>
+              <a href="#feature-easy-sharing" class="tabs__link js-tab-link"
+                data-tab-target="#feature-easy-sharing">Easy Sharing</a>
             </li>
           </ul>
+        </div>
+      </div>
+
+      <!-- TABS-PANELS -->
+      <div class="tabs__panels">
+        <div class="container">
+          <div class="tabs__panel tabs__panel--active" id="feature-simple-bookmarking">
+            <section class="feature-tab-panel">
+              <img src="/img/features-simple-bokkmarking-illustration.svg" alt="Bookmark mananger illustration"
+                class="feature-tab-panel__img feature-tab-panel__img--simple" width="536" height="346">
+              <div class="feature-tab-panel__info">
+                <h3 class="feature-tab-panel__title">
+                  Bookmark in one click
+                </h3>
+                <p class="feature-tab-panel__text">Organize your bookmarks however you like. Our simple drag-and-drop
+                  interface gives you complete control over how you manage your favourite sites.</p>
+                <a href="#" class="button button--blue">More info</a>
+              </div>
+            </section>
+          </div>
+
+          <div class="tabs__panel" id="feature-speedy-searching">
+            <section class="feature-tab-panel">
+              <img src="/img/features-intelligent-search-illustration.svg" alt="Bookmark mananger illustration"
+                class="feature-tab-panel__img feature-tab-panel__img--searching" width="468" height="393">
+              <div class="feature-tab-panel__info">
+                <h3 class="feature-tab-panel__title">
+                  Intelligent search
+                </h3>
+                <p class="feature-tab-panel__text">Our powerful search feature will help you find saved sites in no time
+                  at all. No need to trawl through all of your bookmarks.</p>
+                <a href="#" class="button button--blue">More info</a>
+              </div>
+            </section>
+          </div>
+
+          <div class="tabs__panel" id="feature-easy-sharing">
+            <section class="feature-tab-panel">
+              <img src="img/features-easy-sharing-illustration.svg" alt="Bookmark mananger illustration"
+                class="feature-tab-panel__img feature-tab-panel__img--sharing" width="440" height="380">
+              <div class="feature-tab-panel__info">
+                <h3 class="feature-tab-panel__title">
+                  Share your bookmarks
+                </h3>
+                <p class="feature-tab-panel__text">Easily share your bookmarks and collections with others. Create a
+                  shareable link that you can send at the click of a button.</p>
+                <a href="#" class="button button--blue">More info</a>
+              </div>
+            </section>
           </div>
         </div>
-
-          <!-- TABS-PANELS -->
-          <div class="tabs__panels">
-            <div class="container">
-            <div class="tabs__panel tabs__panel--active" id="feature-simple-bookmarking">
-              <section class="feature-tab-panel">
-                <img src="/img/features-simple-bokkmarking-illustration.svg" alt="Bookmark mananger illustration" class="feature-tab-panel__img feature-tab-panel__img--simple" width="536" height="346">
-                <div class="feature-tab-panel__info">
-                  <h3 class="feature-tab-panel__title">
-                      Bookmark in one click
-                  </h3>
-                  <p class="feature-tab-panel__text">Organize your bookmarks however you like. Our simple drag-and-drop interface gives you complete control over how you manage your favourite sites.</p>
-                  <a href="#" class="button button--blue">More info</a>
-                </div>
-              </section>
-            </div>
-
-            <div class="tabs__panel" id="feature-speedy-searching">
-              <section class="feature-tab-panel">
-                <img src="/img/features-intelligent-search-illustration.svg" alt="Bookmark mananger illustration" class="feature-tab-panel__img feature-tab-panel__img--searching" width="468" height="393">
-                <div class="feature-tab-panel__info">
-                  <h3 class="feature-tab-panel__title">
-                      Intelligent search
-                  </h3>
-                  <p class="feature-tab-panel__text">Our powerful search feature will help you find saved sites in no time at all. No need to trawl through all of your bookmarks.</p>
-                  <a href="#" class="button button--blue">More info</a>
-                </div>
-              </section>
-            </div>
-
-            <div class="tabs__panel" id="feature-easy-sharing">
-              <section class="feature-tab-panel">
-                <img src="img/features-easy-sharing-illustration.svg" alt="Bookmark mananger illustration" class="feature-tab-panel__img feature-tab-panel__img--sharing" width="440" height="380">
-                <div class="feature-tab-panel__info">
-                  <h3 class="feature-tab-panel__title">
-                      Share your bookmarks
-                  </h3>
-                  <p class="feature-tab-panel__text">Easily share your bookmarks and collections with others. Create a shareable link that you can send at the click of a button.</p>
-                  <a href="#" class="button button--blue">More info</a>
-                </div>
-              </section>
-            </div>
-          </div>
-          </div>
+      </div>
     </section>
 
 
@@ -128,7 +141,8 @@
       <div class="container">
         <div class="section__info">
           <h2 class="section__title">Features</h2>
-          <p class="section__description">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+          <p class="section__description">Our aim is to make it quick and easy for you to access your favourite
+            websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
 
         <div class="extension__inner">
@@ -137,19 +151,19 @@
               <img class="extension__img" src="/img/chrome-logo.svg" alt="Google Chrome logo" width="102" height="100">
               <h3 class="extension__title">Add to Chrome</h3>
               <p class="extension__browser-version">Minimum version 62</p>
-                <a class="button button--blue button-block" href="#" target="_blank">Add & Install Extension</a>
+              <a class="button button--blue button-block" href="#" target="_blank">Add & Install Extension</a>
             </li>
             <li class="extensions__item extension">
               <img class="extension__img" src="/img/firefox-logo.svg" alt="Firefox logo" width="" height="">
               <h3 class="extension__title">Add to Firefox</h3>
               <p class="extension__browser-version">Minimum version 55</p>
-                <a class="button button--blue button-block" href="#" target="_blank">Add & Install Extension</a>
+              <a class="button button--blue button-block" href="#" target="_blank">Add & Install Extension</a>
             </li>
             <li class="extensions__item extension">
               <img class="extension__img" src="img/opera-logo.svg" alt=" Opera logo" width="" height="">
               <h3 class="extension__title">Add to Opera</h3>
               <p class="extension__browser-version">Minimum version 46</p>
-                <a class="button button--blue button-block" href="#" target="_blank">Add & Install Extension</a>
+              <a class="button button--blue button-block" href="#" target="_blank">Add & Install Extension</a>
             </li>
           </ul>
         </div>
@@ -158,17 +172,111 @@
 
 
     <!-- FAQ -->
-    <section class="section">
+    <section class="faq section">
       <div class="container">
         <div class="section__info">
           <h2 class="section__title">Features</h2>
-          <p class="section__description">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
+          <p class="section__description">Our aim is to make it quick and easy for you to access your favourite
+            websites. Your bookmarks sync between your devices so you can access them on the go.</p>
         </div>
-      </div>
-    </section>
+        <div class="faq__inner">
+          <div class="faq__accordion">
+            <div class="accordion">
+              <section class="accordion__item accordion__item--open">
+                <header class="accordion__item-header">
+                  <h3 class="accordion__item-title">
+                    What is Bookmark?
+                  </h3>
+                  <button class="accordion__item-toggler" type="button" aria-label="Accordion-toggler">
+                    <svg class="accordion__item-toggler-icon" width="20" height="13" viewBox="0 0 20 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 2L10 10L18 2" stroke="currentColor" stroke-width="3" />
+                    </svg>
+                  </button>
+                </header>
+                <div class="accordion__item-content">
+                  <p class="accordion__item-text">
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                    ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                    ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                  </p>
+                </div>
+              </section>
 
+              <section class="accordion__item">
+                <header class="accordion__item-header">
+                  <h3 class="accordion__item-title">
+                    How can I request a new browser?
+                  </h3>
+                  <button class="accordion__item-toggler" type="button" aria-label="Accordion-toggler">
+                    <svg class="accordion__item-toggler-icon" width="20" height="13" viewBox="0 0 20 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 2L10 10L18 2" stroke="currentColor" stroke-width="3" />
+                    </svg>
+                  </button>
+                </header>
+                <div class="accordion__item-content">
+                  <p class="accordion__item-text">
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                    ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                    ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                  </p>
+                </div>
+              </section>
+
+              <section class="accordion__item">
+                <header class="accordion__item-header">
+                  <h3 class="accordion__item-title">
+                    Is there a mobile app?
+                  </h3>
+                  <button class="accordion__item-toggler" type="button" aria-label="Accordion-toggler">
+                    <svg class="accordion__item-toggler-icon" width="20" height="13" viewBox="0 0 20 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 2L10 10L18 2" stroke="currentColor" stroke-width="3" />
+                    </svg>
+                  </button>
+                </header>
+                <div class="accordion__item-content">
+                  <p class="accordion__item-text">
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                    ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                    ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                  </p>
+                </div>
+              </section>
+
+              <section class="accordion__item">
+                <header class="accordion__item-header">
+                  <h3 class="accordion__item-title">
+                    What about other Chromium browsers?
+                  </h3>
+                  <button class="accordion__item-toggler" type="button" aria-label="Accordion-toggler">
+                    <svg class="accordion__item-toggler-icon" width="20" height="13" viewBox="0 0 20 13" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path d="M2 2L10 10L18 2" stroke="currentColor" stroke-width="3" />
+                    </svg>
+                  </button>
+                </header>
+                <div class="accordion__item-content">
+                  <p class="accordion__item-text">
+                    Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
+                    ultricies non ligula. Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris
+                    augue massa, ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis
+                    ultricies. Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
+                  </p>
+                </div>
+              </section>
+
+              <a href="#" class="button button--blue">More info</a>
+            </div>
+          </div>
+    </section>
   </main>
 
   <script src="/js/index.js"></script>
 </body>
+
 </html>
